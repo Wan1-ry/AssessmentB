@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.container {
+    background-color: white;
+    width: 640px;
+    height: 1136px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    overflow-y: auto;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 40px;
+    align-self: center;
+}
+
+.text-content {
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+
+.welcome {
+    color: #555;
+    font-size: 48px;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.subtitle {
+    color: #ff7f00;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.country-code {
+    width: 100px; /* Adjust width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px; /* Rounded corners on the left */
+    font-size: 18px;
+}
+
+.input-group input[type="tel"] {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 0; /* Remove radius on the right */
+    margin-left: -1px; /* Remove double border issue */
+}
+
+.check-icon {
+    font-size: 24px;
+    color: #555;
+    margin-left: 10px;
+}
+
+button {
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.footer {
+    color: #888;
+    font-size: 18px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* Specific styles for Page 2 */
+.registration-page .input-group label {
+    display: block; /* Ensure the label is a block element */
+    margin-bottom: 5px; /* Add spacing below the label */
+}
+
+.registration-page .input-group input {
+    border-radius: 10px; /* Rounded edges */
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    width: 100%; /* Make the input field fill the container width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.registration-page .checkbox-group {
+    margin-top: 15px; /* Add spacing above the checkbox group */
+}
+
+.registration-page .checkbox-group label {
+    margin-left: 10px; /* Space between checkbox and label */
+}
+
+.registration-page .date-inputs {
+    display: flex;
+    gap: 10px; /* Space between date input fields */
+}
+
+.registration-page .date-inputs input {
+    flex: 1;
+    border-radius: 10px; /* Rounded edges */
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 30px 20px;
+    }
+
+    .logo {
+        width: 140px;
+        margin-bottom: 30px;
+    }
+
+    .welcome {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .input-group input[type="tel"] {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 12px 24px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
